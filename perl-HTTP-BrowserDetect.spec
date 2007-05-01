@@ -1,7 +1,7 @@
 %define module	HTTP-BrowserDetect
 %define name	perl-%{module}
-%define version 0.98
-%define release %mkrel 3
+%define version 0.99
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
