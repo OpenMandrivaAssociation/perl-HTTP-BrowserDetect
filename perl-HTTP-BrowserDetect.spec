@@ -15,6 +15,7 @@ URL:		http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The HTTP::BrowserDetect object does a number of tests on an HTTP user agent
