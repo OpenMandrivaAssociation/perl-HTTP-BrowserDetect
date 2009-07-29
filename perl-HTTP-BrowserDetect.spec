@@ -1,21 +1,21 @@
-%define module	HTTP-BrowserDetect
-%define name	perl-%{module}
-%define version 0.99
-%define release %mkrel 3
+%define upstream_name	 HTTP-BrowserDetect
+%define upstream_version 0.99
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
 License:	GPL
 Group:		Development/Perl
-Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{module}-%{version}.tar.bz2
-URL:		http://search.cpan.org/dist/%{module}/
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The HTTP::BrowserDetect object does a number of tests on an HTTP user agent
@@ -25,7 +25,7 @@ This module is based upon the JavaScript browser detection code available at
 http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 perl -pi -e 's/\015$//' README
 
 %build
@@ -47,4 +47,3 @@ perl -pi -e 's/\015$//' README
 %doc Changes README
 %{perl_vendorlib}/HTTP
 %{_mandir}/*/*
-
