@@ -1,5 +1,5 @@
 %define upstream_name	 HTTP-BrowserDetect
-%define upstream_version 0.99
+%define upstream_version 1.03
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Determine the Web browser, version, and platform from an HTTP user agen
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
