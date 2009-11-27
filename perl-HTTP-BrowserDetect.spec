@@ -15,6 +15,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{u
 BuildRequires:	perl-devel
 %endif
 BuildRequires: perl(Data::Dump)
+BuildRequires: perl(YAML::Tiny)
 
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
