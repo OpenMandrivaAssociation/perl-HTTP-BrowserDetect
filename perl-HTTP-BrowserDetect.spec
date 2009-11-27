@@ -1,5 +1,5 @@
 %define upstream_name	 HTTP-BrowserDetect
-%define upstream_version 1.03
+%define upstream_version 1.06
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
