@@ -10,13 +10,9 @@ License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
-
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
 BuildRequires: perl(Data::Dump)
 BuildRequires: perl(YAML::Tiny)
-
+BuildRequires: perl(JSON::PP)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
