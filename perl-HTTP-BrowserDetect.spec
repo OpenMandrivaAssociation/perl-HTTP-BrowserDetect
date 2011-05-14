@@ -13,6 +13,8 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{u
 BuildRequires: perl(Data::Dump)
 BuildRequires: perl(YAML::Tiny)
 BuildRequires: perl(JSON::PP)
+# workaround perl-JSON for some reason providing perl(JSON::PP)..
+BuildRequires:	perl-JSON-PP
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
