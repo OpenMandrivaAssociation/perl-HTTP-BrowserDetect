@@ -1,2 +1,4 @@
+removed_sources:
+  HTTP-BrowserDetect-1.26.tar.gz: a8ee8aa6bd1081f0fa78bfe22e08b654ae289208
 sources:
-  "HTTP-BrowserDetect-1.26.tar.gz": a8ee8aa6bd1081f0fa78bfe22e08b654ae289208
+  HTTP-BrowserDetect-1.62.tar.gz: 37a49e528f54f546849561fc56f69a500e3d793f

@@ -1,15 +1,15 @@
 %define upstream_name	 HTTP-BrowserDetect
-%define upstream_version 1.26
+%define upstream_version 1.62
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/HTTP/HTTP-BrowserDetect-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Data::Dump)
@@ -147,4 +147,5 @@ make test
 
 * Mon Apr 18 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.98-1mdk 
 - first mandriva release
+
 
