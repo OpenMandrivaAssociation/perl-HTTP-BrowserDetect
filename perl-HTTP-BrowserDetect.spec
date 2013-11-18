@@ -15,6 +15,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(Data::Dump)
 BuildRequires:	perl(YAML::Tiny)
 BuildRequires:	perl(JSON::PP)
+BuildRequires:  perl(Test::Most)
 BuildArch:	noarch
 
 %description
