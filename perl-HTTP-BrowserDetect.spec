@@ -8,7 +8,7 @@ Release:	3
 Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/HTTP/HTTP-BrowserDetect-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
