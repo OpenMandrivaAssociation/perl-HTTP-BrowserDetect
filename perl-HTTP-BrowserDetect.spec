@@ -1,15 +1,15 @@
 %define upstream_name	 HTTP-BrowserDetect
-%define upstream_version 1.62
+%define upstream_version 3.45
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/HTTP/HTTP-BrowserDetect-%{upstream_version}.tar.gz
+Url:		https://github.com/oalders/http-browserdetect
+Source0:	https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-BrowserDetect-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
