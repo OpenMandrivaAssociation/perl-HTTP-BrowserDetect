@@ -1,15 +1,13 @@
 %define upstream_name	 HTTP-BrowserDetect
-%define upstream_version 3.45
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	3.45
+Release:	2
 
 Summary:	Determine the Web browser, version, and platform from an HTTP user agent string
 License:	GPL
 Group:		Development/Perl
 Url:		https://github.com/oalders/http-browserdetect
-Source0:	https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-BrowserDetect-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-BrowserDetect-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ This module is based upon the JavaScript browser detection code available at
 http://www.mozilla.org/docs/web-developer/sniffer/browser_type.html.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 perl -pi -e 's/\015$//' README
 
 %build
@@ -118,9 +116,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.990.0-1mdv2010.0
 + Revision: 403266
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.99-3mdv2009.0
+- rebuild using %3.45 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.99-3mdv2009.0
 + Revision: 268525
 - rebuild early 2009.0 package (before pixel changes)
 
